@@ -1,0 +1,117 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  max-width: 540px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  font-size: 14px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+a {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a:hover {
+  background-color: #3e8e41;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button,
+.upload-btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #808080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+.upload-btn:hover {
+  background-color: #555;
+}
+
+.upload-btn-label {
+  cursor: pointer;
+}
+
+.upload-btn-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-btn-container input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
