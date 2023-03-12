@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OPML Outlines Remover</title>
+    <title>OPML Trimmer</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
   <body>
-    <h1>OPML Outlines Remover</h1>
+    <h1>OPML Trimmer</h1>
     <p>
       Enter a list of podcast titles (one per line) and an OPML file of podcast
       subscriptions. When you click the button, all
@@ -23,15 +23,15 @@
       <label for="opml-upload">OPML file:</label>
       <div class="upload-btn-container">
         <label for="opml-upload" class="upload-btn upload-btn-label"
-          >↑ Upload OPML File</label
+          >↑ Upload OPML file</label
         >
         <input type="file" id="opml-upload" accept="application/xml" />
       </div>
       <textarea id="opml" rows="10" cols="50"></textarea>
     </div>
-    <button id="remove-btn">Remove Outlines</button>
+    <button id="remove-btn">Trim OPML file</button>
     <a href="#" id="download-btn" style="display: none" download
-      >↓ Download OPML File</a
+      >↓ Download OPML file</a
     >
     <script src="script.js"></script>
   </body>
