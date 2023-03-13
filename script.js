@@ -54,6 +54,7 @@ removeBtn.addEventListener("click", () => {
   downloadBtn.href = URL.createObjectURL(
     new Blob([opmlString], { type: "application/xml" })
   );
+  downloadBtn.download = "trimmed_subscriptions.opml";
   downloadBtn.style.display = "inline-block";
 });
 
