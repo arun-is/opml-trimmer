@@ -52,17 +52,21 @@ input[type="file"] {
   margin-bottom: 20px;
 }
 
-a {
-  font-family: Arial, sans-serif;
+a,
+button,
+.upload-btn {
   font-size: 16px;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+a {
+  background-color: #4caf50;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
   margin-left: 20px;
@@ -78,15 +82,8 @@ input[type="file"] {
 
 button,
 .upload-btn {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
   background-color: #808080;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
 }
 
 button:hover,
